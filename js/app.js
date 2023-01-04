@@ -1,12 +1,7 @@
 const number = document.querySelector(".number");
 const btn = document.querySelector(".reset");
 
-const generateNumber = () => {
+btn.addEventListener("click" , () => {
   const randomNumber = Math.floor(Math.random() * 100 + 1);
-  number.innerHTML = randomNumber;
-}
-
-btn.addEventListener("click" , generateNumber);
-
-
-generateNumber();
+  number.innerHTML = randomNumber;  
+});
